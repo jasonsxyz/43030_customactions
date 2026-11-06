@@ -16,4 +16,4 @@ COPY . /app
 RUN test -f /app/.github/scripts/entrypoint.sh && chmod +x /app/.github/scripts/entrypoint.sh
 
 # Set the entrypoint to the entrypoint script
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/app/.github/scripts/entrypoint.sh"]

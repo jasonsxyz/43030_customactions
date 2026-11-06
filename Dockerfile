@@ -13,7 +13,7 @@ RUN apt-get update && \
 COPY . /app
 
 # Ensure the entrypoint script exists and is executable
-RUN test -f /app/entrypoint.sh && chmod +x /app/entrypoint.sh
+RUN test -f /app/.github/scripts/entrypoint.sh && chmod +x /app/.github/scripts/entrypoint.sh
 
 # Set the entrypoint to the entrypoint script
 ENTRYPOINT ["/app/entrypoint.sh"]
